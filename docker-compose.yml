@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gcloud:
+    image: google/cloud-sdk
+    volumes:
+      - ./config:/root/.config/gcloud
+    environment:
+      - CLOUDSDK_CONFIG=/root/.config/gcloud
+    command: gcloud
