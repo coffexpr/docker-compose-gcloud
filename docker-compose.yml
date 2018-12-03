@@ -4,6 +4,6 @@ services:
     image: google/cloud-sdk
     volumes:
       - ./config:/root/.config/gcloud
+      - ~/.ssh:/root/.ssh
     environment:
       - CLOUDSDK_CONFIG=/root/.config/gcloud
-    command: gcloud

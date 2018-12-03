@@ -9,13 +9,13 @@ Usage
 Authenticate user first.
 
 ``` bash
-$ ./gcbase.sh gcloud auth login
+$ ./gcloud auth login
 ```
 
 Execute command.
 
 ``` bash
-$ ./gcloud.sh gcloud projects list
+$ ./gcloud projects list
 ```
 
 Installation example
@@ -24,12 +24,6 @@ Installation example
 Create symbolic link.
 
 ``` bash
-$ ln -s /paht/to/docker-compose-gcloud/gcbase.sh /usr/local/bin/gcbase
-```
-
-Set aliases.
-
-``` bash
-$ alias gcloud="gcbase gcloud"
-$ alias kubectl="gcbase kubectl"
+$ ln -s /paht/to/docker-compose-gcloud/gcloud /usr/local/bin/gcloud
+$ ln -s /paht/to/docker-compose-gcloud/gsutil /usr/local/bin/gsutil
 ```
