@@ -6,3 +6,10 @@ else SCRIPT_DIR=$(cd $(dirname $0); pwd)
 fi
 
 docker-compose -f $SCRIPT_DIR/docker-compose.yml run --rm gcloud gsutil $*
+
+docker-compose \
+  -f $SCRIPT_DIR/docker-compose.yml \
+  run --rm \
+  -v $(pwd):/pwd \
+  -w /pwd \
+  gcloud gsutil $*
