@@ -8,3 +8,4 @@ services:
     environment:
       - CLOUDSDK_CONFIG=/root/.config/gcloud
       - TERM=xterm-256color
+      - USER
