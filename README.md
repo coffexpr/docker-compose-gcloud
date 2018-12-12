@@ -1,29 +1,28 @@
-Docker compose gcloud
-=====================
+# Docker compose gcloud
 
 docker-compose.yml for `gcloud` command, uses google's docker image [cluod-sdk](https://hub.docker.com/r/google/cloud-sdk/).
 
-Usage
-=====
+# Usage
 
 Authenticate user first.
 
-``` bash
+```bash
 $ ./gcloud auth login
 ```
 
 Execute command.
 
-``` bash
+```bash
 $ ./gcloud projects list
 ```
 
-Installation example
-==================
+# Installation example
 
-Create symbolic link.
+Create symbolic link and aliases.
 
-``` bash
-$ ln -s /paht/to/docker-compose-gcloud/gcloud /usr/local/bin/gcloud
-$ ln -s /paht/to/docker-compose-gcloud/gsutil /usr/local/bin/gsutil
+```bash
+$ ln -s /paht/to/docker-compose-gcloud/_gcloud /usr/local/bin/_gcloud
+$ alias gcloud='_gcloud gcloud'
+$ alias gsutil='_gcloud gsutil'
+$ alias bq='_gcloud bq'
 ```

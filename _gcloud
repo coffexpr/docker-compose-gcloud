@@ -10,4 +10,4 @@ docker-compose \
   run --rm \
   -v $(pwd):/pwd \
   -w /pwd \
-  gcloud gcloud $*
+  gcloud $*
