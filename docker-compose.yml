@@ -1,11 +1,11 @@
 version: '3'
 services:
   gcloud:
-    image: google/cloud-sdk
+    image: google/cloud-sdk:alpine
     volumes:
-      - ~/.config/gcloud:/root/.config/gcloud
+      - ~/.config/gcloud:/.config/gcloud
       - ~/.ssh:/root/.ssh
     environment:
-      - CLOUDSDK_CONFIG=/root/.config/gcloud
+      - CLOUDSDK_CONFIG=/.config/gcloud
       - TERM=xterm-256color
       - USER
